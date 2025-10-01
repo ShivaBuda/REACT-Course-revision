@@ -1,19 +1,17 @@
+import { useState } from "react";
+import Steps from "./Steps";
 import "./App.css";
 
 const App = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const openClose = () => setIsOpen((isOpen) => !isOpen);
+
     return (
         <div className="container">
-            <h1 className="title">Steps</h1>
-            <div className="steps">
-                <span className="step active">1</span>
-                <span className="step">2</span>
-                <span className="step">3</span>
-            </div>
-            <p className="steps__msg">Step 1 : This is step one</p>
-            <div className="btns">
-                <button className="btn btn__prev">Previous</button>
-                <button className="btn btn__next">Next</button>
-            </div>
+            <button onClick={openClose} className="btn__closeOpen">
+                &times;
+            </button>
+            {isOpen && <Steps />}
         </div>
     );
 };

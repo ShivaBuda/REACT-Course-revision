@@ -1,0 +1,52 @@
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    color: #555;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    text-align: center;
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 5rem;
+    padding: 1rem;
+    cursor: pointer;
+    margin: 3.2rem 0;
+    background-color: #fff;
+}
+
+.steps__msg {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #333;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.4rem;
+}
+
+.active {
+    background-color: rgb(198, 151, 198);
+}
+
+.btn {
+    background-color: rgb(144, 97, 144);
+    padding: 0.8rem 2rem;
+    border-radius: 5rem;
+    color: #eee;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
