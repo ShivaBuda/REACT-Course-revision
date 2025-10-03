@@ -1,0 +1,23 @@
+.card__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card__item {
+    font-size: 1.5rem;
+    background-color: #eee;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    border-radius: 0.6rem;
+    padding: 0 2.4rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.selected{
+     background-color: orange;
+}
