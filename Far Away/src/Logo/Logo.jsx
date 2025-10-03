@@ -1,3 +1,4 @@
+import "./Logo.css"
 const Logo = () => {
     return <h1 className="heading">🌄 For Away 💼</h1>;
 };

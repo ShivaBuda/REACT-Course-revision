@@ -1,5 +1,6 @@
+import "./Form.css";
 const Form = () => {
-    return <div>Form</div>;
+    return <div className="form">Form</div>;
 };
 
 export default Form;
