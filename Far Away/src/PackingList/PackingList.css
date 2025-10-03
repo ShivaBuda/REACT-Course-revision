@@ -3,4 +3,27 @@
      background-color: #075985;
      padding: 2.4rem;
      color: #fff;
+
+     display: flex;
+     gap: 3.2rem;
+     align-items: start;
+}
+.packingItem{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     font-size: 1.6rem;
+     gap: .6rem;
+ 
+     button{
+          font-size: 2.6rem;
+          color: red;
+          cursor: pointer;
+          margin-left: .8rem;
+     }
+}
+
+.packedItm {
+     text-decoration: line-through;
+     
 }

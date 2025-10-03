@@ -1,5 +1,29 @@
-.form{
-     background-color: #bae6fd;
-     padding: 2.4rem 0;
-     text-align: center;
+.form {
+    display: flex;
+    align-items: center;
+    background-color: #bae6fd;
+    padding: 2.4rem 0;
+    justify-content: space-around;
+    color:#1c1917;
+}
+.form__heading{
+     font-size: 1.5rem;
+     letter-spacing: 1.2px;
+}
+.form__select,
+.form__input {
+    background-color: #e0f2fe;
+    padding: .8rem 1.4rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    color: inherit;
+}
+.form__btn {
+    background-color: #0284c7;
+    padding: 0.6rem 1.4rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    border-radius: 5rem;
+    color: white;
+    cursor: pointer;
 }
