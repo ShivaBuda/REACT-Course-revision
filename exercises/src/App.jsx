@@ -1,13 +1,14 @@
 import {useState} from "react";
 import "./App.css";
 import FlashCards from "./Flashcards/FlashCards";
+import DateCounter from "./DateCounter/DateCounter";
 const App = () => {
     const [step, setStep] = useState(0);
     const [count, setCount] = useState(step);
 
     const today = new Date();
-    console.log(today.toDateString());
-    console.log(today.setDate(today.getDate() + count));
+    today.toDateString();
+    today.setDate(today.getDate() + count);
 
     const stepPlus = function () {
         setStep((step) => step + 1);
@@ -54,6 +55,7 @@ const App = () => {
                 </p>
             </div>
             <FlashCards />
+            <DateCounter />
         </>
     );
 };
