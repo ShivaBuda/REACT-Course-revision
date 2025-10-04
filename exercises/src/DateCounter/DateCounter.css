@@ -1,0 +1,45 @@
+.btns{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.dateCounter{
+     background-color: rgb(205, 102, 202);
+     max-width: 60rem;
+     margin: 3.2rem auto;
+     padding: 2rem 4rem;
+     text-align: center;
+     border-radius:.4rem ;
+     box-shadow: 0 1rem 3rem rgba(000, 000, 000, .15);
+     font-size: 1.6rem;
+}
+.dateCounter__range{
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+}
+
+.dateCounter__btn{
+     background-color: pink;
+     font-size: 2.4rem;
+     padding: 0 1.6rem;
+     border-radius: .4rem;
+
+}
+.dateCounter__input{
+     background-color: rgb(244, 217, 221);
+     padding: .7rem 1.6rem;
+     border-radius: .4rem;
+     margin: 1rem 1rem 1rem 2rem;
+
+}
+
+.btn-reset{
+background-color: #fff;
+margin-top: 2rem;
+padding: .4rem .8rem;
+text-transform: uppercase;
+border-radius: .4rem;
+cursor: pointer;
+color: rgb(40, 25, 28);
+}
