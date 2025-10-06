@@ -1,12 +1,13 @@
 import {useState} from "react";
 import "./Form.css";
 
-const Form = () => {
+const Form = ({onAddItem}) => {
     const [description, setDescription] = useState("");
     const [quantity, setQuantity] = useState(1);
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
         if (!description) return;
         const newItem = {
             id: Date.now(),
@@ -14,7 +15,7 @@ const Form = () => {
             quantity,
             package: false,
         };
-        console.log(newItem);
+        onAddItem(newItem);
 
         setDescription("");
         setQuantity(1);
