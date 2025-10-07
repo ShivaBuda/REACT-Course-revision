@@ -1,29 +1,54 @@
-.packingList{
-     height: 65%;
-     background-color: #075985;
-     padding: 2.4rem;
-     color: #fff;
-
-     display: flex;
-     gap: 3.2rem;
-     align-items: start;
+.packing {
+    height: 65%;
+    background-color: #075985;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
-.packingItem{
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     font-size: 1.6rem;
-     gap: .6rem;
- 
-     button{
-          font-size: 2.6rem;
-          color: red;
-          cursor: pointer;
-          margin-left: .8rem;
-     }
+.packing__list {
+    color: #fff;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+}
+.packing__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.6rem;
+    gap: 0.6rem;
+
+    button {
+        font-size: 2.6rem;
+        color: red;
+        cursor: pointer;
+        margin-left: 0.8rem;
+    }
 }
 
 .packedItm {
-     text-decoration: line-through;
-     
+    text-decoration: line-through;
+}
+.packing__sortItems {
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+}
+.packing__sort,
+.clearList {
+    background-color: #e0f2fe;
+    padding: 1rem 1.2rem;
+    border-radius: 5rem;
+    font-weight: 800;
+    color: #666;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+
+.clearList {
+    margin-left: 2rem;
+    cursor: pointer;
 }
