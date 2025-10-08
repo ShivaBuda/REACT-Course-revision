@@ -2,6 +2,7 @@ import {useState} from "react";
 import "./App.css";
 import FlashCards from "./Flashcards/FlashCards";
 import DateCounter from "./DateCounter/DateCounter";
+import Accordion from "./Accordion/Accordion";
 const App = () => {
     const [step, setStep] = useState(0);
     const [count, setCount] = useState(step);
@@ -56,6 +57,7 @@ const App = () => {
             </div>
             <FlashCards />
             <DateCounter />
+            <Accordion />
         </>
     );
 };
