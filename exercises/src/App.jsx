@@ -3,6 +3,7 @@ import "./App.css";
 import FlashCards from "./Flashcards/FlashCards";
 import DateCounter from "./DateCounter/DateCounter";
 import Accordion from "./Accordion/Accordion";
+import Accordiony from "./Accordion_v2/Accordiony";
 const App = () => {
     const [step, setStep] = useState(0);
     const [count, setCount] = useState(step);
@@ -58,6 +59,7 @@ const App = () => {
             <FlashCards />
             <DateCounter />
             <Accordion />
+            <Accordiony />
         </>
     );
 };

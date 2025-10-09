@@ -1,0 +1,41 @@
+.accordion {
+    max-width: 40rem;
+    margin: 6.4rem auto;
+    color: #444;background-color: rgb(252, 207, 123);
+    padding: 1.4rem;
+}
+
+.accordion__item{
+     display: grid;
+     grid-template-columns: 6fr 1fr;
+     align-items: center;
+     background-color: rgb(247, 237, 219);
+     padding: 1rem 2rem;
+     border-radius: .8rem;
+}
+
+.accordion__item:not(:last-child){
+     margin-bottom: 1.4rem;
+}
+
+.accordion__btn{
+     font-size: 2.4rem;
+     color: inherit;
+     cursor: pointer;
+     margin-left: auto;
+}
+.serial{
+     color: #888;
+     margin-right: .8rem;
+}
+.accordion__ans{
+     font-size: 1.3rem;
+     margin-left: 2.2rem;
+     color: #555;
+}
+.open{
+     color: green;
+}
+.openBorder{
+     border-top: 4px solid green;
+}
